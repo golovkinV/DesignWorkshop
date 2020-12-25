@@ -22,8 +22,7 @@ exports.add = (req, res) => {
         name: roleParams.name
     })
 
-    role
-        .save(role)
+    role.save(role)
         .then(data => {
             res.send(data);
         })
@@ -36,7 +35,7 @@ exports.add = (req, res) => {
         });
 };
 
-//Delete role
+// Delete role
 exports.delete = (req, res) => {
     const id = req.params.id;
     Role.findByIdAndRemove(id)
