@@ -38,4 +38,5 @@ app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}.`);
 });
 
-// Requests routes
+// ROUTES
+require("./routes/role.routes")(app);
