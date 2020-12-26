@@ -2,12 +2,13 @@ const db = require("../index");
 const hash = require("password-hash")
 const User = db.user;
 const Role = db.role
+const noRoleId = "5fe6430d870d0a130f1bab6b"
 
 // Fetch user
 exports.findOne = (req, res) => {
     const id = req.params.id;
     User.findById(id)
-        // .populate("articles")
+        .populate("articles")
         .populate("role")
         .then(data => {
             if (!data)
@@ -25,7 +26,7 @@ exports.findOne = (req, res) => {
 // Fetch users
 exports.findAll = (req, res) => {
     User.find()
-        // .populate("articles")
+        .populate("articles")
         .populate("role")
         .then(data => {
             res.send(data);
@@ -41,7 +42,6 @@ exports.findAll = (req, res) => {
 // Register User
 exports.register = (req, res) => {
     const userParams = req.body;
-    const noRoleId = "5fe6430d870d0a130f1bab6b"
 
     const user = new User({
         login: userParams.login,
@@ -95,7 +95,7 @@ exports.login = (req, res) => {
     const login = user.login
     const password = user.password
     User.findOne({ login: login })
-        // .populate("articles")
+        .populate("articles")
         .populate("role")
         .then(data => {
             if (!data || !hash.verify(password, data.password)) {
