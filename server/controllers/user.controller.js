@@ -78,14 +78,41 @@ exports.register = (req, res) => {
 exports.update = (req, res) => {
     const id = req.params.id;
     const user = req.body
-    User.findByIdAndUpdate(id, user, { useFindAndModify: false })
+    const currentRole = user.currentRole
+    const newRole = user.data.role
+
+    User.findByIdAndUpdate(id, user.data, { useFindAndModify: false })
         .then(data => {
-            res.send(data)
+            if (currentRole !== newRole) {
+                Role.findByIdAndUpdate(newRole, { $addToSet: { users: [data.id] } }, { useFindAndModify: false })
+                    .then(resp => {
+                        Role.findByIdAndUpdate(currentRole, { $pull: { users: data.id } }, { useFindAndModify: false })
+                            .then(resp => {
+                                res.send(data)
+                            })
+                            .catch(err => {
+                                res
+                                    .status(500)
+                                    .send({
+                                        message: err.message || "Some error occurred while updating the Role"
+                                    });
+                            });
+                    })
+                    .catch(err => {
+                        res
+                            .status(500)
+                            .send({
+                                message: err.message || "Some error occurred while updating the Role"
+                            });
+                    });
+            } else {
+                res.send(data)
+            }
         })
         .catch(err => {
             res
                 .status(500)
-                .send({ message: "Error retrieving User with id=" + id });
+                .send({ message: "Error updating User with id=" + id });
         });
 }
 
