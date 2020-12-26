@@ -41,3 +41,4 @@ app.listen(PORT, () => {
 // ROUTES
 require("./routes/role.routes")(app);
 require("./routes/user.routes")(app);
+require("./routes/image.routes")(app);
