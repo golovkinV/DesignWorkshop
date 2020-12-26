@@ -2,12 +2,13 @@ const db = require("../index");
 const hash = require("password-hash")
 const User = db.user;
 const Role = db.role
+const noRoleId = "5fe6430d870d0a130f1bab6b"
 
 // Fetch user
 exports.findOne = (req, res) => {
     const id = req.params.id;
     User.findById(id)
-        // .populate("articles")
+        .populate("articles")
         .populate("role")
         .then(data => {
             if (!data)
@@ -25,7 +26,7 @@ exports.findOne = (req, res) => {
 // Fetch users
 exports.findAll = (req, res) => {
     User.find()
-        // .populate("articles")
+        .populate("articles")
         .populate("role")
         .then(data => {
             res.send(data);
@@ -41,7 +42,6 @@ exports.findAll = (req, res) => {
 // Register User
 exports.register = (req, res) => {
     const userParams = req.body;
-    const noRoleId = "5fe6430d870d0a130f1bab6b"
 
     const user = new User({
         login: userParams.login,
@@ -78,14 +78,41 @@ exports.register = (req, res) => {
 exports.update = (req, res) => {
     const id = req.params.id;
     const user = req.body
-    User.findByIdAndUpdate(id, user, { useFindAndModify: false })
+    const currentRole = user.currentRole
+    const newRole = user.data.role
+
+    User.findByIdAndUpdate(id, user.data, { useFindAndModify: false })
         .then(data => {
-            res.send(data)
+            if (currentRole !== newRole) {
+                Role.findByIdAndUpdate(newRole, { $addToSet: { users: [data.id] } }, { useFindAndModify: false })
+                    .then(resp => {
+                        Role.findByIdAndUpdate(currentRole, { $pull: { users: data.id } }, { useFindAndModify: false })
+                            .then(resp => {
+                                res.send(data)
+                            })
+                            .catch(err => {
+                                res
+                                    .status(500)
+                                    .send({
+                                        message: err.message || "Some error occurred while updating the Role"
+                                    });
+                            });
+                    })
+                    .catch(err => {
+                        res
+                            .status(500)
+                            .send({
+                                message: err.message || "Some error occurred while updating the Role"
+                            });
+                    });
+            } else {
+                res.send(data)
+            }
         })
         .catch(err => {
             res
                 .status(500)
-                .send({ message: "Error retrieving User with id=" + id });
+                .send({ message: "Error updating User with id=" + id });
         });
 }
 
@@ -95,7 +122,7 @@ exports.login = (req, res) => {
     const login = user.login
     const password = user.password
     User.findOne({ login: login })
-        // .populate("articles")
+        .populate("articles")
         .populate("role")
         .then(data => {
             if (!data || !hash.verify(password, data.password)) {

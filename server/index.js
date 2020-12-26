@@ -11,5 +11,6 @@ db.url = dbConfig.url;
 db.user = require("./models/user")(mongoose);
 db.role = require("./models/role")(mongoose);
 db.tag = require("./models/tag")(mongoose);
+db.article = require("./models/article")(mongoose);
 
 module.exports = db;

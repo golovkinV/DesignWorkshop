@@ -5,9 +5,9 @@ const noTag = "5fe72a74a769a41973d8e73c"
 // All tags
 exports.findAll = (req, res) => {
     Tag.find()
-        // .populate("articles")
+        .populate("articles")
         .then(data => {
-            res.send(data.filter(tag => tag.id !== noTag));
+            res.send(data);
         })
         .catch(err => {
             res
@@ -40,7 +40,7 @@ exports.add = (req, res) => {
 exports.findOne = (req, res) => {
     const id = req.params.id;
     Tag.findById(id)
-        // .populate("articles")
+        .populate("articles")
         .then(data => {
             if (!data)
                 res
