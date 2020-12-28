@@ -109,3 +109,14 @@
                   В body передается модель Article
                   
       + DELETE-запрос: **/article/{article_id}**
+
+5. Загрузка **Изображений:**
+            
+      + POST-запросы: 
+      
+            1. Загрузить изображение: /image/upload        
+                  Отправка изображения через form-data:
+                        const formData = new FormData();
+                        formData.append('file', image);
+                        
+               Ответ запроса: URL изображения, которое потом отправляется в модели на сервер
