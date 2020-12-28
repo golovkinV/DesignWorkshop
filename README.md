@@ -47,3 +47,21 @@
                               role: "{role_id}",
                               articles: []
                          }
+                         
+2. Получение данных по **Ролям:**
+
+      + GET-запросы: 
+      
+            1. Все роли: /role/all
+            
+            2. Роль по id: /role/{role_id}
+            
+      + POST-запросы: 
+      
+            1. Добавить роль: /role/add       
+                  Модель object: 
+                        let data = {
+                              name: "название"
+                         }
+                         
+      + DELETE-запрос: **/role/{role_id}**
