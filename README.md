@@ -82,3 +82,30 @@
                               name: "название"
                          }
                          
+4. Получение данных по **Статьям:**
+
+      + GET-запросы: 
+      
+            1. Все статьи: /article/all
+            
+            2. Статья по id: /article/{article_id}
+            
+      + POST-запросы: 
+      
+            1. Добавить статью: /article/{user_id}         
+                  Модель object: 
+                        let data = {
+                              title: "Test Creation Article",
+                              content: "Testing #1",
+                              image: URL,
+                              tag: "{tag_id}"
+                         }
+                         
+               Tag необязательный параметр. Если его не передавать, то статья будет относиться к "No tag".
+               
+      + PUT-запросы
+      
+            1. Редактировать статью: /article/{article_id}
+                  В body передается модель Article
+                  
+      + DELETE-запрос: **/article/{article_id}**
