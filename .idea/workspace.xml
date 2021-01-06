@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87283ee1-64c2-4848-b7bb-be287edbf090" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/server/controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/user.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/AWS.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/AWS.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +62,10 @@
       <option name="presentableId" value="Default" />
       <updated>1608911846167</updated>
       <workItem from="1608911848671" duration="6889000" />
+      <workItem from="1609147136727" duration="28000" />
+      <workItem from="1609147222028" duration="2654000" />
+      <workItem from="1609875943465" duration="905000" />
+      <workItem from="1609961840574" duration="804000" />
     </task>
     <servers />
   </component>
@@ -77,5 +82,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -3,7 +3,7 @@ const s3 = require('../AWS');
 exports.uploadImage = (req, res) => {
     const image = req.files.file
     const params = {
-        Bucket: 'utmn',
+        Bucket: 'utmn2',
         Key: image.name, // File name you want to save as in S3
         Body: image.data
     };
