@@ -21,7 +21,70 @@
   <component name="ChangeListManager">
     <list default="true" id="87283ee1-64c2-4848-b7bb-be287edbf090" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/AWS.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/AWS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/user.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/@types/node/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/@types/node/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/@types/node/assert.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/@types/node/assert.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/@types/node/child_process.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/@types/node/child_process.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/@types/node/crypto.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/@types/node/crypto.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/@types/node/dns.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/@types/node/dns.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/@types/node/fs.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/@types/node/fs.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/@types/node/http.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/@types/node/http.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/@types/node/http2.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/@types/node/http2.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/@types/node/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/@types/node/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/@types/node/net.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/@types/node/net.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/@types/node/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/@types/node/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/@types/node/url.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/@types/node/url.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/aws-sdk/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/aws-sdk/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/aws-sdk/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/aws-sdk/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/aws-sdk/apis/acm-pca-2017-08-22.min.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/aws-sdk/apis/acm-pca-2017-08-22.min.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/aws-sdk/apis/apigatewayv2-2018-11-29.min.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/aws-sdk/apis/apigatewayv2-2018-11-29.min.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/aws-sdk/apis/healthlake-2017-07-01.min.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/aws-sdk/apis/healthlake-2017-07-01.min.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/aws-sdk/apis/servicecatalog-2015-12-10.min.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/aws-sdk/apis/servicecatalog-2015-12-10.min.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/aws-sdk/clients/acmpca.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/aws-sdk/clients/acmpca.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/aws-sdk/clients/apigatewayv2.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/aws-sdk/clients/apigatewayv2.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/aws-sdk/clients/cloudfront.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/aws-sdk/clients/cloudfront.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/aws-sdk/clients/cloudsearch.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/aws-sdk/clients/cloudsearch.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/aws-sdk/clients/elasticache.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/aws-sdk/clients/elasticache.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/aws-sdk/clients/healthlake.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/aws-sdk/clients/healthlake.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/aws-sdk/clients/macie2.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/aws-sdk/clients/macie2.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/aws-sdk/clients/servicecatalog.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/aws-sdk/clients/servicecatalog.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/aws-sdk/dist/aws-sdk-core-react-native.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/aws-sdk/dist/aws-sdk-core-react-native.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/aws-sdk/dist/aws-sdk-react-native.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/aws-sdk/dist/aws-sdk-react-native.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/aws-sdk/dist/aws-sdk.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/aws-sdk/dist/aws-sdk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/aws-sdk/dist/aws-sdk.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/aws-sdk/dist/aws-sdk.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/aws-sdk/lib/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/aws-sdk/lib/core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/aws-sdk/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/aws-sdk/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/body-parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/body-parser/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/cors/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/cors/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/denque/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/denque/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/denque/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/denque/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/denque/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/denque/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/mongoose/History.md" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/History.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/mongoose/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/mongoose/dist/browser.umd.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/dist/browser.umd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/mongoose/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/document.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/document.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/model.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/queryhelpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/queryhelpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schema/array.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schema/array.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schematype.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schematype.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/types/array.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/types/array.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/types/core_array.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/types/core_array.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/types/documentarray.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/types/documentarray.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/types/embedded.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/types/embedded.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/mongoose/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/mpath/History.md" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/mpath/History.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/mpath/bench.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/mpath/bench.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/mpath/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/mpath/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/mpath/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/mpath/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/mpath/lib/stringToParts.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/mpath/lib/stringToParts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/mpath/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/mpath/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/mpath/test/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/mpath/test/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/mpath/test/stringToParts.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/mpath/test/stringToParts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/user.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/user.routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +101,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1m9hinWyhz8ejuga54PIBMCnxel" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -49,6 +120,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -66,6 +142,8 @@
       <workItem from="1609147222028" duration="2654000" />
       <workItem from="1609875943465" duration="905000" />
       <workItem from="1609961840574" duration="804000" />
+      <workItem from="1610016267136" duration="8528000" />
+      <workItem from="1610221143698" duration="2286000" />
     </task>
     <servers />
   </component>
