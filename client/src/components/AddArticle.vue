@@ -26,11 +26,12 @@
       </div>
       <div class="form-group">
         <label for="title">Текст статьи</label>
-        <input
+        <textarea
             type="text"
             class="form-control"
             id="title"
             required
+            rows="6"
             v-model="article.content"
             name="login"
         />

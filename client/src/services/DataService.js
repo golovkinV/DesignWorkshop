@@ -21,6 +21,14 @@ class DataService {
         return http.post(`/article/${data.userId}`, data);
     }
 
+    updateArticle(data) {
+        return http.put(`/article/${data.data.id}`, data);
+    }
+
+    deleteArticle(id) {
+        return http.delete(`/article/${id}`);
+    }
+
     getAllArticles() {
         return http.get(`/article/all`);
     }
