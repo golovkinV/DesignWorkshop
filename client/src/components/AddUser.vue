@@ -125,7 +125,8 @@ export default {
                 .then(response => {
                   this.user.id = response.data.id;
                   console.log(response.data);
-                  localStorage.setItem('clientLogin', this.user.id)
+                  localStorage.setItem('clientLogin', this.user.id);
+                  localStorage.setItem('clientRole', this.user.role.name);
                   this.submitted = true;
                   this.router.push({ path: 'home' })
                 })

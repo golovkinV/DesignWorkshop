@@ -37,7 +37,8 @@ import DataService from "../services/DataService";
 export default {
   name: "login",
   mounted() {
-    localStorage.removeItem('clientLogin')
+    localStorage.removeItem('clientLogin');
+    localStorage.removeItem('clientRole');
   },
   data() {
     return {
@@ -59,11 +60,13 @@ export default {
       console.log(this.user.login)
       DataService.login(data)
           .then(response => {
+            this.user = response.data;
             this.user.id = response.data.id;
             console.log(response.data);
             this.submitted = true;
             this.router.push({ path: 'home' });
             localStorage.setItem('clientLogin', this.user.id);
+            localStorage.setItem('clientRole', this.user.role.name);
           })
           .catch(e => {
             console.log(e);

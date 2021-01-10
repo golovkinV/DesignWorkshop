@@ -37,7 +37,7 @@
       </div>
 
     <div class="form-group">
-      <label for="password">Пароль</label>
+      <label for="password">Пароль (при необходимости)</label>
       <input
           class="form-control"
           id="password"
@@ -47,7 +47,7 @@
     </div>
 
     <div class="form-group">
-      <label for="image">Фото</label>
+      <label for="image">Фото (при необходимости)</label>
       <input
           class="form-control"
           type="file"
@@ -93,7 +93,7 @@ export default {
           .then(response => {
             if (response.data) {
               this.user = response.data;
-              console.log(this.user.id);
+              console.log(this.user);
             } else {
               this.user = {
                 id: null,
